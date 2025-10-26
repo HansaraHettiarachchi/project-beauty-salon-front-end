@@ -1,73 +1,76 @@
-# React + TypeScript + Vite
+# Project Beauty Salon — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live demo: https://project-beauty-salon-front-end.vercel.app/
 
-Currently, two official plugins are available:
+❄❄ Calling All Coders! 🚀
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+We're building a modern e-commerce web app for a beauty salon. This repository contains the frontend built with React, TypeScript, and Tailwind CSS. The backend for the full product is implemented separately using Spring Boot.
 
-## React Compiler
+Why contribute?
+- Improve your resume with a real-world project
+- Gain experience with React + TypeScript + Tailwind
+- Collaborate and learn from other devs
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Tech stack
+- Frontend: React, TypeScript, Vite, Tailwind CSS
+- Backend (separate): Spring Boot
 
-## Expanding the ESLint configuration
+Project status
+- Frontend live preview: https://project-beauty-salon-front-end.vercel.app/
+- This repository hosts the frontend only. Backend APIs are expected to be provided by a Spring Boot service.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Features (frontend)
+- Product listing and details
+- Shopping cart and checkout flow (frontend wiring)
+- Responsive UI built with Tailwind CSS
+- Organized with React + TypeScript components
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Quick start (development)
+These commands assume you have Node.js and npm installed.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Open a PowerShell terminal and run:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```powershell
+# install dependencies
+npm install
+
+# start dev server (Vite)
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Build and preview (production build):
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```powershell
+# build for production
+npm run build
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# preview the production build locally
+npm run preview
 ```
+
+Notes
+- If you want to connect the frontend to a local backend, update the API base URL in the code (search for `API`, `baseUrl`, or environment variables in `src/` and `vite.config.ts`).
+- Tailwind configuration is included in the repo; styles are in `src/index.css` and `src/App.css`.
+
+Contributing
+- Want to help? We'd love it. Two easy ways to contribute:
+	- Open a Pull Request with small improvements (UI, accessibility, tests).
+	- DM on WhatsApp to coordinate larger features: 0783061492
+
+When contributing via PR:
+1. Fork the repository and create a topic branch.
+2. Run the project locally and make your changes.
+3. Include a short description of your change and any screenshots if UI changed.
+4. Submit the PR and reference any related issue or feature request.
+
+Contact
+- WhatsApp / DM: 0783061492
+
+License
+- This project is provided under the MIT License — adapt as needed for your use.
+
+Acknowledgements
+- Built with Vite + React + TypeScript + Tailwind CSS.
+
+Enjoy contributing — let's build something awesome! 🎉
+
