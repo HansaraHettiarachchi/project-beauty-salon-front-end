@@ -1,5 +1,45 @@
 @import "tailwindcss";
+/* @import "components"; */
 
 body {
   @apply bg-white dark:bg-[#0e1120];
+}
+
+.bg-bottom {
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ring-pulse {
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  /* total duration is based on number of rings x step (set via --total-duration)
+     phase offset is provided as a negative animation-delay so each layer keeps
+     its phase across repeated cycles */
+  animation-name: ringPulse;
+  animation-duration: var(--total-duration, 1.2s);
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: var(--anim-delay, 0s);
+  will-change: box-shadow, border-color, transform;
+}
+
+@keyframes ringPulse {
+  0% {
+    box-shadow: var(--small-shadow);
+    border-color: var(--border-color1);
+    transform: scale(1);
+  }
+  45% {
+    box-shadow: var(--large-shadow);
+    border-color: var(--border-color2);
+    transform: scale(1.01);
+  }
+  100% {
+    box-shadow: var(--small-shadow);
+    border-color: var(--border-color1);
+    transform: scale(1);
+  }
 }
