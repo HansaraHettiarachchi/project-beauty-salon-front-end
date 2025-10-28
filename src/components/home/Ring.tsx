@@ -90,9 +90,8 @@ const RingLayer: React.FC<{
 
 const Ring: React.FC<RingProps> = ({ size, count, image }) => {
     return (
-        <div className='absolute top-10 w-[800px] h-[800px]'>
             <RingLayer depth={0} maxDepth={count} size={size} image={image} />
-        </div>
+
     );
 };
 
