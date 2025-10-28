@@ -1,6 +1,7 @@
 import Ring from './Ring';
 import layer1 from "../../assets/images/layer.png";
 import bg from "../../assets/images/Salon BG-01.png";
+import AppointmentBtn from './AppointmentBtn';
 
 export default function Hero() {
 
@@ -12,6 +13,8 @@ export default function Hero() {
                         <h1 className='font-extrabold text-6xl leading-18 scale-y-115'>Experince the <br /> Best Beauty </h1>
                         <h1 className='font-medium text-6xl text-[#f7a392] leading-18 scale-y-115'>Services</h1>
                         <h5 className='font-sans scale-x-100 leading-10'>There are many veriations</h5>
+
+                        <AppointmentBtn />
                     </div>
                 </div>
                 <div className="flex justify-start">
@@ -26,8 +29,8 @@ export default function Hero() {
 
                 </div>
             </div>
-            <div className="bg-bottom absolute bottom-20  w-full h-screen m-0 p-0" style={{ backgroundImage: `url(${bg})` }} aria-hidden="true" />
-            <div className='pb-8 bg-white absolute bottom-15  w-full'></div>
+            <div className="bg-bottom absolute bottom-20  w-full h-screen m-0 p-0 pointer-events-none" style={{ backgroundImage: `url(${bg})` }} aria-hidden="true" />
+            <div className='pb-8 bg-white absolute bottom-15  w-full pointer-events-none'></div>
         </>
     );
 
