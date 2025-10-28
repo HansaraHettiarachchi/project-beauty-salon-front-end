@@ -1,6 +1,6 @@
 import Ring from './Ring';
 import layer1 from "../../assets/images/layer.png";
-import bg from "../../assets/images/Salon BG-01.png";
+// import bg from "../../assets/images/Salon BG-01.png";
 import AppointmentBtn from './AppointmentBtn';
 
 export default function Hero() {
