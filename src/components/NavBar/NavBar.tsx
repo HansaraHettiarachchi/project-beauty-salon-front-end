@@ -1,5 +1,3 @@
-import { Fragment, useState } from 'react'
-import logo from '../../assets/images/logo.png'
 import {
     Dialog,
     DialogBackdrop,
@@ -14,7 +12,9 @@ import {
     TabPanel,
     TabPanels,
 } from '@headlessui/react'
-import { Bars3Icon, MagnifyingGlassIcon, ShoppingBagIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, ShoppingBagIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Fragment, useState } from 'react'
+import logo from '../../assets/images/logo.png'
 
 const navigation = {
     categories: [
