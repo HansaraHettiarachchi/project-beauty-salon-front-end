@@ -4,7 +4,7 @@ import {
     DialogPanel,
     PopoverGroup
 } from '@headlessui/react'
-import { Bars3Icon, ShoppingBagIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useState } from 'react'
 import logo from '../../assets/images/logo.png'
 
