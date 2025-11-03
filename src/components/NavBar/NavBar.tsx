@@ -4,7 +4,7 @@ import {
     DialogPanel,
     PopoverGroup
 } from '@headlessui/react'
-import { Bars3Icon, ShoppingBagIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useState } from 'react'
 import logo from '../../assets/images/logo.png'
 
@@ -93,16 +93,6 @@ export default function NavBar() {
                 <nav aria-label="Top" className="mx-auto xl:px-25 px-4 sm:px-6 lg:px-8">
                     <div className="">
                         <div className="flex h-16 items-center">
-                            <button
-                                type="button"
-                                onClick={() => setOpen(true)}
-                                className="relative rounded-md bg-white p-2 text-gray-400 lg:hidden"
-                            >
-                                <span className="absolute -inset-0.5" />
-                                <span className="sr-only">Open menu</span>
-                                <Bars3Icon aria-hidden="true" className="size-6" />
-                            </button>
-
                             {/* Logo */}
                             <div className="ml-4 flex lg:ml-0">
                                 <a href="#">
@@ -123,7 +113,7 @@ export default function NavBar() {
                                         <a
                                             key={page.name}
                                             href={page.href}
-                                            className="flex items-center font-medium text-gray-700 hover:text-gray-800"
+                                            className="flex items-center text-[16px] font-medium text-gray-700 hover:text-gray-800"
                                         >
                                             {page.name}
                                         </a>
@@ -131,8 +121,8 @@ export default function NavBar() {
                                 </div>
                             </PopoverGroup>
 
-                            <div className="ml-auto flex items-center">
-                                {/* <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
+                            {/* <div className="ml-auto flex items-center">
+                                <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
                                     <a href="#" className="text-sm font-medium text-gray-700 hover:text-gray-800">
                                         Sign in
                                     </a>
@@ -140,7 +130,7 @@ export default function NavBar() {
                                     <a href="#" className="text-sm font-medium text-gray-700 hover:text-gray-800">
                                         Create account
                                     </a>
-                                </div> */}
+                                </div>
 
                                 <div className="ml-4 flow-root lg:ml-6">
                                     <a href="#" className="group -m-2 flex items-center p-2">
@@ -152,7 +142,17 @@ export default function NavBar() {
                                         <span className="sr-only">items in cart, view bag</span>
                                     </a>
                                 </div>
-                            </div>
+                            </div> */}
+
+                            <button
+                                type="button"
+                                onClick={() => setOpen(true)}
+                                className="relative ml-auto rounded-md bg-white p-2 text-gray-400 lg:hidden"
+                            >
+                                <span className="absolute -inset-0.5" />
+                                <span className="sr-only">Open menu</span>
+                                <Bars3Icon aria-hidden="true" className="size-6" />
+                            </button>
                         </div>
                     </div>
                 </nav>
