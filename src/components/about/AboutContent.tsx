@@ -5,8 +5,8 @@ const AboutContent: React.FC = () => {
   return (
     <div>
       <h4 className="about-subtitle">About Us</h4>
-      <h2 className="about-title">Beauty and Spa <br />
-      Center</h2>
+      <h2 className="about-title">Beauty and <span> Spa <br />
+      Center</span></h2>
       <p className="about-text"><i><b>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br /> 
         sed do eiusmod tempor.</b></i>
