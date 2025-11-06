@@ -1,5 +1,8 @@
 import React from "react";
 import "./About.css";
+import aboutSpa from "../../assets/images/about-spa.jpg";
+import treeBranch from "../../assets/images/tree_branch.png";
+import stone from "../../assets/images/stone.png";
 
 const AboutImage: React.FC = () => {
   return (
@@ -8,19 +11,19 @@ const AboutImage: React.FC = () => {
       <div className="about-image-bg-circle"></div>
 
       <img
-        src="src\assets\images\about-spa.jpg"
+        src={aboutSpa}
         alt="Spa Expert"
         className="about-main-image"
       />
 
       <img
-        src="src\assets\images\tree_branch.png"
+        src={treeBranch}
         alt="Leaves Decoration"
         className="about-leaves"
       />
 
       <img
-        src="src\assets\images\stone.png"
+        src={stone}
         alt="Flower Decoration"
         className="about-stone"
       />

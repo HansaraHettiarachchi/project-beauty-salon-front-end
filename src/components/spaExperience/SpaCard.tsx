@@ -7,7 +7,7 @@ interface SpaCardProps {
   highlight?: boolean;
 }
 
-const SpaCard: React.FC<SpaCardProps> = ({ title, text, highlight }) => {
+const SpaCard: React.FC<SpaCardProps> = ({ title, text, image, highlight }) => {
   return (
     <div className={`spa-card ${highlight ? "highlight" : ""}`}>
       <div className="spa-card-text">
@@ -17,9 +17,11 @@ const SpaCard: React.FC<SpaCardProps> = ({ title, text, highlight }) => {
           <i className="fas fa-shopping-cart"></i> Shop Now
         </button>
       </div>
-      {/* <div className="spa-card-image">
-        <img src={image} alt="" />
-      </div> */}
+      {image && (
+        <div className="spa-card-image">
+          <img src={image} alt={title} />
+        </div>
+      )}
     </div>
   );
 };
