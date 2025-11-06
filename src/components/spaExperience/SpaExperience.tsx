@@ -1,7 +1,7 @@
 // src/components/spaExperience/SpaExperience.tsx
 import React from "react";
-import "./spaExperience.css";
 import SpaCard from "./SpaCard";
+import "./spaExperience.css";
 
 const SpaExperience: React.FC = () => {
   return (
