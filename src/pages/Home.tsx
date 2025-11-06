@@ -1,6 +1,8 @@
-import About from "../components/home/About";
 import Hero from "../components/home/Hero";
 import NavBar from "../components/NavBar/NavBar";
+import SpaExperience from "../components/spaExperience/SpaExperience";
+import AboutUs from "../components/about/AboutUs";
+import Services from "../components/services/Services";
 
 export default function Home() {
     return (
@@ -9,8 +11,9 @@ export default function Home() {
                 <NavBar />
                 <Hero />
 
-
-                <About />
+                <SpaExperience />
+                <AboutUs />
+                <Services/>
 
 
             </div>
