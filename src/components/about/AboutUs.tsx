@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "./about.css";
+import "./About.css";
 import AboutImage from "./AboutImage";
 import AboutContent from "./AboutContent";
 
