@@ -3,11 +3,11 @@ import React from "react";
 interface SpaCardProps {
   title: string;
   text: string;
-  image: string;
+  image?: string;
   highlight?: boolean;
 }
 
-const SpaCard: React.FC<SpaCardProps> = ({ title, text, image, highlight }) => {
+const SpaCard: React.FC<SpaCardProps> = ({ title, text, highlight }) => {
   return (
     <div className={`spa-card ${highlight ? "highlight" : ""}`}>
       <div className="spa-card-text">
