@@ -1,17 +1,24 @@
 import React from "react";
 import "./services.css";
 import ServiceCard from "./ServiceCard";
+import leafLeft from "../../assets/images/leaf-left.png";
+import leafRight from "../../assets/images/leaf-right.png";
+import welcomeBg from "../../assets/images/welcome-bg.png";
+import iconStone from "../../assets/images/icon-stone.png";
+import iconCandle from "../../assets/images/icon-candle.png";
+import iconMortar from "../../assets/images/icon-mortar.png";
+import iconMedicine from "../../assets/images/icon-medicine.png";
 
 const Services: React.FC = () => {
   return (
     <section className="services-section">
-      <img src="src\assets\images\leaf-left.png" alt="Leaf Left" className="leaf-left" />
-      <img src="src\assets\images\leaf-right.png" alt="Leaf Right" className="leaf-right" />
+      <img src={leafLeft} alt="Leaf Left" className="leaf-left" />
+      <img src={leafRight} alt="Leaf Right" className="leaf-right" />
 
       <div className="services-header">
         <div className="services-welcome">
           <img
-            src="src\assets\images\welcome-bg.png"
+            src={welcomeBg}
             alt="Decorative Icon"
             className="services-welcome-bg"
           />
@@ -31,22 +38,22 @@ const Services: React.FC = () => {
 
       <div className="services-grid">
         <ServiceCard
-          icon="src\assets\images\icon-stone.png"
+          icon={iconStone}
           title="Stone spa"
           text="Risus commodo viverra maecenas accumsan lacus vel facilisis."
         />
         <ServiceCard
-          icon="src\assets\images\icon-candle.png"
+          icon={iconCandle}
           title="Candle Message"
           text="Risus commodo viverra maecenas accumsan lacus vel facilisis."
         />
         <ServiceCard
-          icon="src\assets\images\icon-mortar.png"
+          icon={iconMortar}
           title="Mortar"
           text="Risus commodo viverra maecenas accumsan lacus vel facilisis."
         />
         <ServiceCard
-          icon="src\assets\images\icon-medicine.png"
+          icon={iconMedicine}
           title="Medicine"
           text="Risus commodo viverra maecenas accumsan lacus vel facilisis."
         />
