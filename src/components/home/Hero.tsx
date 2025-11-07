@@ -25,7 +25,7 @@ export default function Hero() {
                             <Ring size="p-4" count={5} />
                         </div>
                         <div className="px-10">
-                            <img src={layer1} alt="" className='absolute overflow-visible lg:right-20 xl:right-40 top-45 w-[600px] aspect-square ' />
+                            <img src={layer1} alt="" className='absolute overflow-visible lg:right-20 xl:right-40 top-40 lg:w-[600px] xl:w-[700px] h-auto ' />
                         </div>
 
                     </div>
@@ -39,7 +39,7 @@ export default function Hero() {
                 <img src={layer1} alt="" className='absolute top-40 lg:right-10 xl:right-30 w-auto lg:h-[400px] xl:h-[650px]' />
 
             </div> */}
-            <div className="bg-bottom absolute bottom-10 w-full h-screen m-0 p-0 pointer-events-none" style={{ backgroundImage: `url(${bg})` }} aria-hidden="true" />
+            <div className="bg-bottom absolute top-20 md:top-0 w-full h-screen m-0 p-0 pointer-events-none" style={{ backgroundImage: `url(${bg})` }} aria-hidden="true" />
             {/* <div className='bg-white relative bottom-20 w-full pointer-events-none'></div> */}
         </>
     );
