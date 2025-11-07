@@ -4,7 +4,7 @@ export default function About() {
         <div className=" bg-white">
             dsfds <br />
             bdfdfbfdb <br />
-            dsfgfdsfddsas dasd sadsa <br />
+            dsfgfdsfddsas dasd sadsa dgdsf<br />
         </div>
     )
 }

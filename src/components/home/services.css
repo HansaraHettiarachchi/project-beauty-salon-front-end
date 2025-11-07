@@ -48,6 +48,13 @@
   }
 }
 
+@media (max-width: 768px) {
+  .leaf-left,
+  .leaf-right {
+    display: none;
+  }
+}
+
 .services-header {
   max-width: 800px;
   margin: 0 auto 4rem;
