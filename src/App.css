@@ -3,7 +3,7 @@
 
 
 body {
-  @apply bg-white dark:bg-[#0e1120];
+  @apply bg-white;
   outline: none !important;
 }
 
