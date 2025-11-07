@@ -3,14 +3,11 @@ import React from "react";
 import SpaCard from "./SpaCard";
 import "./spaExperience.css";
 import welcomeIcon from "../../assets/images/welcome-icon.png";
-import spaClayImg from "../../assets/images/spa-clay.jpg";
-import spaWellnessImg from "../../assets/images/spa-wellness.jpg";
 
 const SpaExperience: React.FC = () => {
   return (
     <section className="spa-section">
       <div className="spa-header">
-        {/* Welcome text with background image */}
         <div className="spa-welcome-container">
           <img
             src={welcomeIcon}
@@ -34,12 +31,10 @@ const SpaExperience: React.FC = () => {
         <SpaCard
           title="Clay Masks"
           text="A good clay mask can go a long way to draw out impurities skin."
-          image={spaClayImg}
         />
         <SpaCard
           title="Wellness & Spa"
           text="A good clay mask can go a long way to draw out impurities skin."
-          image={spaWellnessImg}
           highlight
         />
       </div>
