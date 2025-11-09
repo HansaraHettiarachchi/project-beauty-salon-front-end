@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import React from 'react';
+import bg from "../../assets/images/Salon BG-01.png";
 
 interface RingProps {
     size?: string;
@@ -76,22 +77,20 @@ const RingLayer: React.FC<{
         >
             <RingLayer depth={depth + 1} maxDepth={maxDepth} size={size} image={image} />
 
-            {/* image insertion can be enabled on the innermost layer if needed
             {depth === maxDepth - 1 && (
-                <img
-                    src={image}
-                    alt="ring"
-                    className="absolute top-0 left-0 w-[70%] h-[70%] object-cover m-20"
-                />
-            )} */}
+                <>
+                    <img src={image} alt="" className='absolute top-20 overflow-visible lg:w-[600px] xl:w-[700px] h-auto ' />
+
+                </>
+
+            )}
         </motion.div>
     );
 };
 
 const Ring: React.FC<RingProps> = ({ size, count, image }) => {
     return (
-            <RingLayer depth={0} maxDepth={count} size={size} image={image} />
-
+        <RingLayer depth={0} maxDepth={count} size={size} image={image} />
     );
 };
 
