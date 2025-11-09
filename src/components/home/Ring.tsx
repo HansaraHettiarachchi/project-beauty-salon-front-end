@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import React from 'react';
-import bg from "../../assets/images/Salon BG-01.png";
 
 interface RingProps {
     size?: string;
