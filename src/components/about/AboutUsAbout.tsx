@@ -1,7 +1,7 @@
 import Ring from "../home/Ring";
 import layer1 from "../../assets/images/layer.png";
 import bg from "../../assets/images/Salon BG-01.png";
-
+import "./AboutUsAbout.css"
 
 export default function AboutUsAbout() {
   return (
@@ -9,8 +9,8 @@ export default function AboutUsAbout() {
             <div className='grid lg:grid-cols-2 mx-auto bg-[#f5f5f5] h-[80vh]'>
                 <div className='flex justify-center lg:justify-end'>
                     <div className='mt-40 transform text-center lg:text-start '>
-                        <h1 className='font-extrabold text-6xl leading-18 scale-y-115'>About Us  </h1>
-                        <h1 className='font-medium text-xl text-[#f7a392] leading-18 scale-y-115'>Home/<span className="text-[#0e0e0e]">ABOUT PAGE</span></h1>
+                        <h2 className='banner-title'>About Us  </h2>
+                        <p className='breadcrumbs'><span className="text-[#f7a392]" >Home/</span>ABOUT PAGE</p>
 
                        
                     </div>
