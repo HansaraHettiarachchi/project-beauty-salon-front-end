@@ -2,10 +2,9 @@
 
 import tree from "../../assets/images/3.png";
 
-// A simple responsive 3-column layout matching the provided design
-// TailwindCSS assumed
 
-export default function OurFeatures() {
+
+export default function Details() {
   const items = [
     {
       title: "1985",
@@ -27,7 +26,7 @@ export default function OurFeatures() {
         {items.map((item, index) => (
           <div key={index} className="flex flex-col items-start text-center md:text-left">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">{item.title}</h2>
-            <div className="w-10 h-10 opacity-20 mb-4">
+            <div className="w-13 h-13 opacity-150 mb-4">
               <img
                 src={tree}
                 alt="leaf"
