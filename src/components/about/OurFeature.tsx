@@ -1,4 +1,5 @@
 import React from 'react';
+import "./OurFeature.css";
 
 // Images
 import leaf from "../../assets/images/leaf-right.png";
@@ -56,7 +57,7 @@ const OurFeature: React.FC = () => {
       <img
         src={leaf}
         alt="leaf"
-        className="absolute right-0 -top-4 md:top-0 w-24 md:w-40 z-30 pointer-events-none" 
+        className="leaf" 
       />
       
       {/* MAIN CONTENT CONTAINER */}

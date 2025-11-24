@@ -1,0 +1,47 @@
+.leaf {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 220px;
+  opacity: 0.9;
+  animation: rightFloat 7s ease-in-out infinite;
+}
+
+@keyframes rightFloat {
+  0% {
+    transform: translateY(50%) translateY(0);
+  }
+  50% {
+    transform: translateY(50%) translateY(20px);
+  }
+  100% {
+    transform: translateY(50%) translateY(0);
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .leaf-left,
+  .leaf-right {
+    display: none;
+  }
+}
+
+.services-welcome {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.brushBg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: auto;
+  transform: translate(-50%, -50%);
+  opacity: 0.1;
+  animation: moveSideways 8s ease-in-out infinite;
+}
+
