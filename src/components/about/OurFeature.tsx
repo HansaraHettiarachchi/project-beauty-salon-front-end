@@ -46,7 +46,7 @@ const OurFeature: React.FC = () => {
   return (
     <section className="relative w-full bg-[#fff7f5] overflow-hidden min-h-screen">
       
-      {/* 🖼️ TOP WAVE (edgeTop) - Now using DIV/BACKGROUND IMAGE */}
+      {/*  TOP WAVE (edgeTop) - Now using DIV/BACKGROUND IMAGE */}
 
 <div 
     className="absolute inset-x-0 top-0 w-full h-40 md:h-56 bg-no-repeat bg-top bg-cover z-10 pointer-events-none" 
@@ -130,7 +130,7 @@ const OurFeature: React.FC = () => {
         </div>
       </div>
 
-      {/* 🖼️ BOTTOM WAVE (edgeBottom) - Using DIV/BACKGROUND IMAGE */}
+      {/*  BOTTOM WAVE (edgeBottom) - Using DIV/BACKGROUND IMAGE */}
       <div 
           className="absolute inset-x-0 bottom-0 w-full h-40 md:h-56 bg-no-repeat bg-bottom bg-cover z-10 pointer-events-none" 
           style={{ backgroundImage: `url(${edgeBottom})` }} 
